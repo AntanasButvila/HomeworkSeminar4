@@ -23,17 +23,33 @@
 // 9012 -> 12
 
 
-Console.Write("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($"{number} -> {SumOfDigits(number)}");
-int SumOfDigits(int number)
-{
-    int sum = 0;
-  while (number > 0)
-   {
-   sum += number % 10;
-   number/= 10;
-  }
-  return sum;
+// Console.Write("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($"{number} -> {SumOfDigits(number)}");
+// int SumOfDigits(int number)
+// {
+//     int sum = 0;
+//   while (number > 0)
+//    {
+//    sum += number % 10;
+//    number/= 10;
+//   }
+//   return sum;
 
+// }
+
+// Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+// 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+// 6, 1, 33 -> [6, 1, 33]
+
+int[]result = GetArray(3); 
+Console.WriteLine($"[{String.Join(", ", result)}]");
+int[] GetArray(int size)
+{
+    int[] array = new int [size];
+    for(int i = 0; i < array.Length; i++)
+    {
+        array[i] = new Random().Next(1, 90);
+    }
+    return array;
 }

@@ -42,14 +42,14 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-int[]result = GetArray(3); 
-Console.WriteLine($"[{String.Join(", ", result)}]");
-int[] GetArray(int size)
-{
-    int[] array = new int [size];
-    for(int i = 0; i < array.Length; i++)
-    {
-        array[i] = new Random().Next(1, 90);
-    }
-    return array;
-}
+// int[]result = GetArray(3); 
+// Console.WriteLine($"[{String.Join(", ", result)}]");
+// int[] GetArray(int size)
+// {
+//     int[] array = new int [size];
+//     for(int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(1, 90);
+//     }
+//     return array;
+// }
